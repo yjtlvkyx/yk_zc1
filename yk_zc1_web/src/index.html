@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <!--start 头部导航栏 -->
+    <div class="header">
+        <span class="aside-r"><i class="iconfont icon-shouqi-01"></i></span>
+        <span class="search"><i class="iconfont icon-fangdajing"></i>搜索商品/品牌</span>
+        <span class="login">登陆</span>
+    </div>
+    <!--end 头部导航栏 -->
+
+    <div class="main"></div>
+
+    <!-- start 选择商品遮罩层 -->
+    <div class="shopping-search-mask" style="display:none">
+
+        <!-- start 遮罩层头部 -->
+        <div class="shop-header">
+            <span><i class="iconfont icon-angle-left ret"></i><i class="iconfont icon-fangdajing"></i></span>
+            <input type="text" placeholder="搜索商品/店铺/品牌">
+        </div>
+        <!-- start 遮罩层头部 -->
+
+        <!-- start 遮罩层内容 -->
+        <div class="shop-main">
+            <p>热门搜索</p>
+
+        </div>
+        <!-- end 遮罩层内容 -->
+    </div>
+    <!-- end 选择商品遮罩层 -->
+
+    <script src="./js/libs/require.js" defer async="true" data-main="js/index.js"></script>
+</body>
+
+</html>
