@@ -23,10 +23,13 @@ gulp.task("devJs", () => {
 //启动服务
 gulp.task("server", () => {
     return gulp.src("src").pipe(server({
-        port: 5544,
-        proxies: {
-            // {source:"/"}
-        }
+        port: 8844,
+        proxies: [
+            { source: "/shopping/selectall", target: "http://localhost:8024/shopping/selectall" },
+            { source: "/shopping/selectlike", target: "http://localhost:8024/shopping/selectlike" },
+            { source: "/shopping/selecthot", target: "http://localhost:8024/shopping/selecthot" },
+            { source: "/shopping/selectdetail", target: "http://localhost:8024/shopping/selectdetail" },
+        ]
     }))
 })
 

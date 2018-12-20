@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 html,
@@ -81,21 +82,47 @@ body {
             }
         }
     }
-    .shop-main {
+    .shop-main-hot {
         flex: 100%;
         p {
             width: 100%;
             line-height: 40px;
             text-align: left;
+            border: 0;
             text-indent: 10px;
         }
-        span {
+        li {
             display: inline-block;
             float: left;
             margin: 2px 9px;
             padding: 4px;
             border-radius: 5px;
             border: 1px solid #ccc;
+        }
+    }
+    .shop-input-search {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 0px;
+        background: white;
+        li,
+        p {
+            width: 46%;
+            margin: 0 2%;
+            font-size: 20px;
+            line-height: 40px;
+            text-indent: 10px;
+            height: 40px;
+            text-align: center;
+            box-sizing: border-box;
+            border-bottom: 2px solid rebeccapurple;
+        }
+        p {
+            width: 96%;
         }
     }
 }

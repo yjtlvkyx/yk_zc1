@@ -1,18 +1,9 @@
-require(["./js/libs/config.js"], () => {
-    require(["vue"], (Vue) => {
+require(["./js/common/config.js"], () => {
+    require(["shopMasks", "vue", "axios"], (masks, Vue, axios) => {
         console.log(Vue)
 
-        //商品种类选择遮罩层的出现及消失
-        let search = document.querySelector(".search"),
-            shoppingMask = document.querySelector(".shopping-search-mask"),
-            shopHeaderBack = document.querySelector(".shop-header"),
-            shopMask = document.querySelector(".shop-header .ret");
-        search.addEventListener("touchend", (e) => {
-            shoppingMask.style.display = "block";
-        });
-        shopMask.addEventListener("touchend", () => {
-            shoppingMask.style.display = "none";
-        })
 
+        //随便调用一下 遮罩层的内容
+        masks();
     })
 })
